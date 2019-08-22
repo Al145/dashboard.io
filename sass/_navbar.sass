@@ -1,0 +1,214 @@
+.navbar
+    min-height: 100vh
+    width: 129px
+    background: #282e35
+    &__avatar
+        display: flex
+        justify-content: center
+        padding-top: 30px
+        cursor: pointer
+        transition: .2s ease-out
+    &__avatar:active
+        transform: scale(0.95)
+    &__avatar:after
+        content: '2'
+        font-size: 16px
+        font-weight: 500
+        align-items: center
+        display: flex
+        justify-content: center
+        color: #fff
+        height: 28px
+        width: 28px
+        border-radius: 50%
+        background: #ff503f
+        position: absolute
+        left: 83px
+    &__divider
+        color: #595959
+        display: flex
+        justify-content: center
+        font-size: 40px
+        word-spacing: -7px
+        cursor: default
+    &__board
+        display: flex
+        justify-content: center
+        margin-top: 15px
+        margin-bottom: -8px
+        cursor: pointer
+        color: #505356
+        font-size: 48px
+        transition: .1s linear
+    &__board:hover
+        color: #ff503f
+    &__board:active
+        transform: scale(0.91)
+    &__board-main span
+        color: #505356
+        margin-top: 18px
+        transition: .1s linear
+    &__board-main:hover span
+        color: #fff
+    &__board-main:before
+        background-color: #ff503f
+        display: block
+        content: ""
+        height: 4px
+        border-radius: 7px
+        left: -59px
+        top: 221px
+        position: absolute
+        transform: rotate(90deg)
+    &__board-main:hover:before,
+    &__board-main:focus:before 
+        width: 122px
+    &__list
+        display: flex
+        justify-content: center
+        margin-top: 12px
+        margin-bottom: -14px
+        color: #505356
+        font-size: 40px
+        transition: .1s linear
+    &__list:hover
+        color: #ff503f
+    &__list-main, &__settings-main, &__update-main, &__logout-main
+        cursor: pointer
+    &__list:after
+        content: '9'
+        font-size: 15px
+        font-weight: 500
+        align-items: center
+        display: flex
+        justify-content: center
+        color: #fff
+        height: 25px
+        width: 25px
+        border-radius: 50%
+        background: #adadad
+        position: absolute
+        left: 76px
+        top: 310px
+        transition: .1s linear
+    &__list:hover:after
+        background: #ff503f
+    &__list-main span
+        margin-top: 22px
+        transition: .1s linear
+        color: #505356
+    &__list-main:hover span
+        color: #fff
+    &__list:before
+        background-color: #ff503f
+        display: block
+        content: ""
+        height: 4px
+        border-radius: 7px
+        left: -48px
+        top: 349px
+        position: absolute
+        transform: rotate(90deg)
+    &__list:hover:before,
+    &__list:focus:before 
+        width: 100px
+    &__settings
+        display: flex
+        justify-content: center
+        margin-top: 15px
+        font-size: 51px
+        color: #505356
+        transition: .1s linear
+    &__settings:hover
+        color: #ff503f
+    &__settings:active
+        transform: translateY(-10%)
+    &__settings-main:before
+        background-color: #ff503f
+        display: block
+        content: ""
+        height: 4px
+        border-radius: 7px
+        left: -48px
+        top: 477px
+        position: absolute
+        transform: rotate(90deg)
+    &__settings-main:hover:before,
+    &__settings-main:focus:before 
+        width: 100px
+    &__settings-main span
+        margin-top: 11px
+        color: #505356
+        transition: .1s linear
+    &__settings-main:hover span
+        color: #fff
+    &__update
+        display: flex
+        justify-content: center
+        margin-top: 80px
+        color: #505356
+        font-size: 53px
+        transition: .1s linear
+    &__update:hover
+        color: #ff503f
+    &__update:active
+        transform: scale(0.91)
+    &__update-main:before
+        background-color: #ff503f
+        display: block
+        content: ""
+        height: 4px
+        border-radius: 7px
+        left: -48px
+        top: 642px
+        position: absolute
+        transform: rotate(90deg)
+    &__update-main:hover:before,
+    &__update-main:focus:before 
+        width: 100px
+    &__update-main span
+        margin-top: 12px
+        margin-bottom: -8px
+        color: #505356
+        transition: .1s linear
+    &__update-main:hover span
+        color: #fff
+    &__update > img 
+        width: 50px
+        height: 50px
+    &__update:after
+        content: '2'
+        font-size: 15px
+        font-weight: 500
+        align-items: center
+        display: flex
+        justify-content: center
+        color: #fff
+        height: 25px
+        width: 25px
+        border-radius: 50%
+        background: #ff503f
+        position: absolute
+        left: 79px
+    &__logout
+        display: flex
+        justify-content: center
+        margin-top: 14px
+    &__logout-main
+        filter: invert(44%) sepia(22%) saturate(8802%) hue-rotate(11deg) brightness(99%) contrast(88%)
+        transition: .3s linear
+    &__logout-main:hover
+        transform: scale(0.9)
+        filter: invert(44%) sepia(22%) saturate(8802%) hue-rotate(177deg) brightness(99%) contrast(88%)
+    &__logout-main:active
+        transform: scale(1)
+    &__logout-main > span
+        margin-top: 5px
+        padding-bottom: 20px
+    &.navbar span
+        // color: #505255
+        font-weight: 600
+        display: flex
+        justify-content: center
+    // &.navbar span:hover
+    //     color: #fff
